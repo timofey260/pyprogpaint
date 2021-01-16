@@ -67,16 +67,18 @@ def func(indx, func):
         try:
             col = (int(text[1]), int(text[2]), int(text[3]))
             rect = (int(text[4]), int(text[5]), int(text[6]), int(text[7]))
+            width = int(text[8])
         except ValueError:
             error(1)
-        pygame.draw.rect(gameDisplay, col, rect)
+        pygame.draw.rect(gameDisplay, col, rect, width=width)
     if token == ind + "sqr":
         try:
             col = (int(text[1]), int(text[2]), int(text[3]))
             rect = (int(text[4]), int(text[5]), int(text[6]), int(text[6]))
+            width = int(text[7])
         except ValueError:
             error(1)
-        pygame.draw.rect(gameDisplay, col, rect)
+        pygame.draw.rect(gameDisplay, col, rect, width=width)
     if token == ind + 'cir':
         col = (int(text[1]), int(text[2]), int(text[3]))
         center = (int(text[4]), int(text[5]))
