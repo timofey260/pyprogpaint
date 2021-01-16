@@ -1,9 +1,9 @@
-﻿from os import system
+from os import system
 import codecs
 import pygame
 from time import sleep
 file = input("filename: ")
-fname = file + ".alt"
+fname = file + ".ppp"
 prg = codecs.open(fname, "r+", encoding="ansi").readlines()
 st = 0
 w = int(prg[0])
